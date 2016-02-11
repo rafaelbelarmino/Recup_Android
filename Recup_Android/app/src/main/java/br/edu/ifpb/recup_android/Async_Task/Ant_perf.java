@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 
 import br.edu.ifpb.recup_android.Util.Response;
+import br.edu.ifpb.recup_android.Util.HtttpService;
 
 /**
  * Created by Rafael on 10/02/2016.
@@ -53,7 +54,7 @@ public class Ant_perf extends AsyncTask<JSONObject, Void, Response>{
 
                 String valor = json.getString("valor");
 
-                Toast.makeText(context, "Seu Perfil Antropométrico é: " + valor, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Perfil antopometrico: " + valor, Toast.LENGTH_LONG).show();
             }
 
         } catch (JSONException e) {
