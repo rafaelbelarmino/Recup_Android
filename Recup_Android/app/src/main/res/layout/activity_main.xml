@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="75dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="br.edu.ifpb.recup_android.MainActivity">
+    android:weightSum="1">
 
-    <android.support.design.widget.AppBarLayout
+    <Button
+        android:id="@+id/imc_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="IMC"
+        android:layout_weight="0.25" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/vct_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:layout_centerVertical="true"
+        android:text="VCT"
+        android:layout_weight="0.25" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/perf_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Perf_Ant"
+        android:layout_weight="0.25" />
+
+</LinearLayout>

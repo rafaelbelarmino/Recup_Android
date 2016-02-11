@@ -6,54 +6,51 @@
     android:weightSum="1"
     android:nestedScrollingEnabled="true">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_gravity="center_horizontal"
         android:text="IMC"
-        android:id="@+id/Calc_Imc" />
+        android:id="@+id/Text_imc"
+        android:layout_gravity="center_horizontal" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="50px"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Peso (em Kg):"
-            android:id="@+id/Text_peso" />
+            android:id="@+id/But_Peso" />
 
         <EditText
-            android:layout_width="156dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:id="@+id/altura_imc"
-            android:text="1.70" />
+            android:id="@+id/Text_Peso"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Altura:"
-            android:id="@+id/Altura_imc" />
+            android:id="@+id/But_Altura" />
 
         <EditText
-            android:layout_width="146dp"
+            android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:id="@+id/peso_imc"
-            android:text="60.0" />
+            android:id="@+id/Text_Altura" />
 
         <Button
-            android:layout_width="141dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular"
-            android:id="@+id/calcula_imc" />
+            android:id="@+id/But_Calc"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 </LinearLayout>
